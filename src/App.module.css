@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(127, 255, 212, 0.477);
+  background-image: url('./assets/pattern-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.contenedorInput {
+  text-align: center;
+}
+
+.contenedorInput button {
+background-color: black;
+border: none;
+border-radius:  0 8px 8px 0;
+padding: 8px;
+}
+
+.contenedorInput input {
+  padding: 8px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.contenedorInfo {
+  margin-top: 3rem;
+  display: flex;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 12px;
+}
+
+.contenedorInfo div {
+  margin: 0 3rem;
+  padding: 2rem 0;
+}
+
