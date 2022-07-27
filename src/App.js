@@ -20,19 +20,19 @@ let valorIngresado = '';
 const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_IbVBG1ro8zey9jOQv6IzKP1MXOpYb&ipAddress=${ip}`
 let ubicacion = '';
 
-// useEffect(() => {
-//   (async function () {
-//     let data = await fetch(url).then((res) => res.json());
-//     setIp(data.ip);
-//     ubicacion = data.location.city + ', ' + data.location.region;
-//     setLocation(ubicacion)
-//     console.log(ubicacion)
-//     setTimezone(data.location.timezone)
-//     setIsp(data.isp)
-//     setLat(data.location.lat)
-//     setLng(data.location.lng)
-//   })();
-// }, [url]);
+useEffect(() => {
+  (async function () {
+    let data = await fetch(url).then((res) => res.json());
+    setIp(data.ip);
+    ubicacion = data.location.city + ', ' + data.location.region;
+    setLocation(ubicacion)
+    console.log(ubicacion)
+    setTimezone(data.location.timezone)
+    setIsp(data.isp)
+    setLat(data.location.lat)
+    setLng(data.location.lng)
+  })();
+}, [url]);
 
 
 const handleChange = e => {
@@ -75,7 +75,7 @@ const handleSubmit = (e) => {
       </div>
       </div>
       
-      <MapContainer center={{lat,lng}} style={{width:'100vw', height: '80vh'}} zoom={5} scrollWheelZoom={true}>
+      <MapContainer center={{lat,lng}} style={{width:'100%', height: '80vh'}} zoom={5} scrollWheelZoom={true}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
