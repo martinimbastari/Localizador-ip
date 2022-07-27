@@ -30,7 +30,7 @@
 }
 .contenedorInput h1 {
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.878);
+  color: rgba(255, 255, 255, 0.95);
   padding: 1rem;
 }
 
@@ -90,12 +90,15 @@ color: hsl(0, 0%, 59%);
 
   .contenedorInput input{
       padding: 15px;
+      border-radius: 15px 0 0 15px;
   }
 
   .contenedorInput button {
     padding: 17px;
+    border-radius: 0 15px 15px 0;
   }
   .contenedorInfo {
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
