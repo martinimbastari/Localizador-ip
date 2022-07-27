@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -10,33 +17,72 @@
   background-repeat: no-repeat;
   padding: 1rem;
 }
+
+.contenedorInput form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
 .contenedorInput {
   text-align: center;
 }
+.contenedorInput h1 {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.878);
+  padding: 1rem;
+}
 
 .contenedorInput button {
+  padding: 10px;
 background-color: black;
 border: none;
 border-radius:  0 8px 8px 0;
-padding: 8px;
+
+
 }
 
 .contenedorInput input {
-  padding: 8px;
   border-radius: 8px 0 0 8px;
   border: none;
+  width: 350px;
+  padding: 8px;
+  font-size: 18px;
 }
 
 .contenedorInfo {
   margin-top: 3rem;
   display: flex;
-  padding: 1rem;
   background-color: aliceblue;
-  border-radius: 12px;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.contenedorInfo p {
+  font-weight: 500;
+  padding: 1rem 0;
+font-size: 18px;
+color: hsl(0, 0%, 59%);
+}
+
+.contenedorInfo h2 {
+  padding-bottom: 1rem;
+  font-weight: 700;
 }
 
 .contenedorInfo div {
   margin: 0 3rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
+  max-width: 30%;
+}
+
+.contenedorMapa {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup {
+  color: red;
 }
 
