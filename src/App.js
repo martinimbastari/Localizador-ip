@@ -6,6 +6,7 @@ import arrow from './assets/icon-arrow.svg'
 import icon from './assets/icon-location.svg'
 
 
+
 function App() {
 const [ip, setIp] = useState('');
 const [location, setLocation] = useState('');
@@ -51,7 +52,7 @@ const handleSubmit = (e) => {
       <div className={style.contenedorInput}>
         <h1>Localizador IP</h1>
         <form onSubmit={handleSubmit}>
-          <input type='text'  onChange={handleChange} />
+          <input type='text' placeholder='ingrese una direccion ip'  onChange={handleChange} />
           <button type='submit' ><img src={arrow}/></button>
         </form>
       </div>
